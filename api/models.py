@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class DriverRoute(models.Model):
-    body = models.TextField()
+    body = models.JSONField()
     updated = models.DateTimeField(auto_now = True)
     created = models.DateTimeField(auto_now_add= True)
     

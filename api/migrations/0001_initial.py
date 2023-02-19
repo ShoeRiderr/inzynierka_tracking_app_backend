@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='DriverRoute',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('body', models.TextField()),
+                ('body', models.JSONField()),
                 ('updated', models.DateTimeField(auto_now=True)),
                 ('created', models.DateTimeField(auto_now_add=True)),
             ],
