@@ -1,1 +1,1 @@
-web: gunicorn HOME.wsgi --log-file -
+web: gunicorn inzynierka_tracking_app_backend.wsgi --log-file -

@@ -136,6 +136,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT='staticfiles'
 
 django_heroku.settings(locals())
