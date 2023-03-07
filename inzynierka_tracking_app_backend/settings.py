@@ -1,3 +1,4 @@
+import django_heroku # add in the beginning
 """
 Django settings for inzynierka_tracking_app_backend project.
 
@@ -135,3 +136,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+django_heroku.settings(locals())
